@@ -40,11 +40,11 @@ namespace ConferenceTracker.Entities
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {
             List<ValidationResult> list = new List<ValidationResult>();
-            if (EmailAddress != null && EmailAddress.EndsWith(StringComparison("TechnologyLiveConference.com")) ) 
+            if (EmailAddress != null && EmailAddress.EndsWith("TechnologyLiveConference.com") ) 
             {
-                list.Add(ValidationResult.Success.ErrorMessage(""Technology Live Conference staff should not use their conference email addresses."")); 
+                //list.Add(ValidationResult.Success.ErrorMessage(""Technology Live Conference staff should not use their conference email addresses."")); 
             }
-            return List<ValidationResult>;
+            return list;
         }
     }
 }

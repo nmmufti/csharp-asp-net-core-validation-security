@@ -8,7 +8,7 @@
 
 <h4>Speaker</h4>
 <hr />
-<div asp-validation-summary="ModeOnly" class="text-danger">
+<div asp-validation-summary="ModelOnly" class="text-danger">
 
 </div>
 
@@ -57,7 +57,7 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial")};
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
     
 }
 
